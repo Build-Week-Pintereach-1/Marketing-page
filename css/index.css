@@ -178,7 +178,7 @@ header {
   width: 100%;
   box-sizing: border-box;
 }
-@media ( max-width: 550px ) {
+@media (max-width: 700px) {
   header {
     padding: 0 20px;
   }
@@ -194,7 +194,7 @@ header .logo {
 header nav {
   float: right;
 }
-@media ( max-width: 550px ) {
+@media (max-width: 700px) {
   header nav {
     position: absolute;
     width: 100%;
@@ -210,7 +210,7 @@ header nav ul {
   padding: 0;
   display: flex;
 }
-@media ( max-width: 550px ) {
+@media (max-width: 700px) {
   header nav ul {
     display: block;
     text-align: center;
@@ -228,13 +228,13 @@ header nav ul li a {
   text-decoration: none;
   display: block;
 }
-@media ( max-width: 550px ) {
+@media (max-width: 700px) {
   header nav ul li a {
     border-bottom: 1px solid black;
   }
 }
 header nav ul li a:hover {
-  color: red;
+  color: orange;
   background: grey;
 }
 header nav.active {
@@ -248,10 +248,65 @@ header .menu-toggle {
   display: none;
   cursor: pointer;
 }
-@media ( max-width: 550px ) {
+@media (max-width: 700px) {
   header .menu-toggle {
     display: block;
   }
+}
+.main-content {
+  border: 1px solid black;
+  margin-top: 50px;
+}
+.main-content .banner {
+  border: 1px solid black;
+  height: 50vh;
+  display: flex;
+}
+.main-content .banner .text {
+  border: 1px solid black;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-content .banner .text .text-box {
+  border: 1px solid black;
+  width: 80%;
+}
+.main-content .banner .main-img {
+  width: 50%;
+}
+.main-content .banner .main-img .img-box {
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.main-content .banner .main-img .img-box img {
+  max-height: 100%;
+}
+.main-content .features {
+  border: 1px solid black;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+.main-content .features .box-container {
+  border: 1px solid black;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-content .features .box-container div {
+  border: 1px solid black;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-content .features .box-container div img {
+  height: 200px;
 }
 footer {
   height: auto;
@@ -265,7 +320,7 @@ footer .links {
   justify-content: space-around;
   height: 50%;
 }
-@media ( max-width: 550px ) {
+@media (max-width: 700px) {
   footer .links {
     flex-direction: column;
     padding: 1rem;
@@ -274,7 +329,7 @@ footer .links {
 footer .links .logo {
   font-size: 2rem;
 }
-@media ( max-width: 550px ) {
+@media (max-width: 700px) {
   footer .links .logo {
     padding-bottom: 10px;
   }
@@ -289,7 +344,7 @@ footer .links .footernav ul a {
 footer .links .icons {
   font-size: 3rem;
 }
-@media ( max-width: 550px ) {
+@media (max-width: 700px) {
   footer .links .icons {
     padding: 2rem;
   }
@@ -297,34 +352,4 @@ footer .links .icons {
 footer .copyright {
   text-align: center;
   padding-bottom: 3rem;
-}
-.main-content {
-  border: 1px solid black;
-  margin-top: 50px;
-}
-.main-content .banner {
-  border: 1px solid black;
-  height: 50vh;
-  display: flex;
-}
-.main-content .banner .text {
-  border: 1px solid black;
-  width: 50%;
-}
-.main-content .banner .text .text-box {
-  border: 1px solid black;
-}
-.main-content .banner .main-image {
-  border: 1px solid black;
-}
-.main-content .features {
-  border: 1px solid black;
-  height: 90vh;
-  display: flex;
-  justify-content: center;
-}
-.main-content .features .box-container {
-  border: 1px solid black;
-  width: 80%;
-  height: 100%;
 }

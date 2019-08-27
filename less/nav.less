@@ -4,7 +4,7 @@ header {
     top: 0;
     left: 0;
     padding: 0 100px;
-    background: grey;
+    background: black;
     width: 100%;
     box-sizing: border-box;
     @media @mobile {
@@ -41,18 +41,19 @@ header {
                 list-style: none;
                 a {
                     height: 50px;
+                    font-size: 15px;
                     line-height: 50px;
                     padding: 0 20px;
                     color: white;
                     text-decoration: none;
                     display: block;
-                    @media @phone {
+                    @media @mobile {
                         border-bottom: 1px solid black;
                     }
                 }
                 a:hover {
                     color: red;
-                    background: blue;
+                    background: grey;
                 }
             }
         }
@@ -65,7 +66,7 @@ header {
         float: right;
         line-height: 50px;
         font-size: 24px;
-        display: hidden;
+        display: none;
         cursor: pointer;
         @media @mobile {
             display: block;
@@ -73,8 +74,6 @@ header {
     }
 }
 
-.main-content {
-    padding-top: 50px;
-}
+
 
 

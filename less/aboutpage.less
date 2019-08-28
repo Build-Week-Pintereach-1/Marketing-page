@@ -1,0 +1,97 @@
+@import "variables";
+@import "mixins";
+@import "reset";
+@import "global";
+@import "nav";
+
+.main-content {
+    margin-top: 50px;   
+    border: 1px solid black;
+    height: auto;
+    .banner {
+        height: 20vh;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .our-story {
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        h2 {
+            text-align: center;
+            margin: 5rem;
+        }
+        .text-box {
+            border: 1px solid black;
+            width: 600px;
+            margin-bottom: 5rem;
+            padding: 2rem;
+            @media @mobile {
+                width: 90%;
+            }
+            p {
+                line-height: 30px;
+            }
+        }
+    }
+    .team  {
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        .team-container {
+            width:80%;
+            height: 100%;
+            border: 1px solid rgb(158, 34, 34);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .title {
+                text-align: center;
+                margin: 2rem;
+            }
+            .profiles {
+                border: 1px solid black;
+                max-width: 100rem;
+                margin: 5rem;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: space-between;
+                .box {
+                    border: 1px solid black;
+                    width: 30%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    @media @tablet {
+                        width: 50%;
+                    }
+                    @media @mobile {
+                        width: 100%;
+                    }
+                    .img-container {
+                        width: 70%;
+                        padding: 2rem;
+                        img {
+                            border-radius: 100px;
+                            border: 5px solid black;
+                            margin: 1rem;
+                        }
+                    }
+                    .nametag {
+                        font-size: 1.5rem;
+                        padding: 0rem 0rem 2rem 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@import "footer";

@@ -173,19 +173,22 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 0 100px;
+  padding: 10px 100px;
   background: black;
   width: 100%;
   box-sizing: border-box;
 }
 @media (max-width: 700px) {
   header {
-    padding: 0 20px;
+    padding: 14px 15px;
   }
+}
+header img {
+  width: 5rem;
 }
 header .logo {
   color: white;
-  height: 50px;
+  height: auto;
   line-height: 50px;
   font-size: 24px;
   float: left;
@@ -198,9 +201,9 @@ header nav {
   header nav {
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 15.5rem;
     background: #333;
-    top: 50px;
+    top: 75px;
     left: -100%;
     transition: 0.5s;
   }
@@ -220,7 +223,7 @@ header nav ul li {
   list-style: none;
 }
 header nav ul li a {
-  height: 50px;
+  height: 5rem;
   font-size: 15px;
   line-height: 50px;
   padding: 0 20px;
@@ -235,7 +238,7 @@ header nav ul li a {
 }
 header nav ul li a:hover {
   color: orange;
-  background: grey;
+  border: 1px solid grey;
 }
 header nav.active {
   left: 0;
@@ -254,27 +257,80 @@ header .menu-toggle {
   }
 }
 .main-content {
-  border: 1px solid black;
-  margin-top: 50px;
+  margin: 50px 50px 0px 50px;
+  height: auto;
 }
 .main-content .banner {
-  border: 1px solid black;
+  border-top: 1px solid black;
   height: 50vh;
   display: flex;
+  margin-top: 10rem;
 }
 .main-content .banner .text {
-  border: 1px solid black;
   width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 920px) {
+  .main-content .banner .text {
+    width: 100%;
+  }
+}
 .main-content .banner .text .text-box {
-  border: 1px solid black;
-  width: 80%;
+  width: 50rem;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  border-right: 2px dashed black;
+}
+@media (max-width: 920px) {
+  .main-content .banner .text .text-box {
+    border: none;
+    background-color: #F8F8FF;
+    width: 60rem;
+  }
+}
+@media (max-width: 700px) {
+  .main-content .banner .text .text-box {
+    width: 40rem;
+  }
+}
+.main-content .banner .text .text-box h1 {
+  color: #FF6347;
+}
+@media (max-width: 920px) {
+  .main-content .banner .text .text-box h1 {
+    text-align: center;
+  }
+}
+.main-content .banner .text .text-box p {
+  margin: 3rem 0rem 3rem 0rem;
+}
+.main-content .banner .text .text-box button {
+  text-align: center;
+  width: 18rem;
+  height: 30px;
+  border: 4px solid black;
+  border-radius: 10px;
+  background-color: #7070db;
+  color: white;
+  cursor: pointer;
+}
+@media (max-width: 920px) {
+  .main-content .banner .text .text-box button {
+    width: 100%;
+  }
 }
 .main-content .banner .main-img {
   width: 50%;
+}
+@media (max-width: 920px) {
+  .main-content .banner .main-img {
+    display: none;
+  }
 }
 .main-content .banner .main-img .img-box {
   width: auto;
@@ -286,24 +342,64 @@ header .menu-toggle {
   max-height: 100%;
 }
 .main-content .features {
-  border: 1px solid black;
-  height: 90vh;
+  height: 125rem;
   display: flex;
   justify-content: center;
 }
 .main-content .features .box-container {
-  border: 1px solid black;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
   width: 80%;
-  height: 100%;
+  height: 115rem;
   display: flex;
   flex-wrap: wrap;
+  margin: 5rem 0rem 5rem 0rem;
+}
+.main-content .features .box-container .box3 {
+  padding-left: 20%;
+}
+@media (max-width: 920px) {
+  .main-content .features .box-container {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-bottom: 0;
+    height: 115rem;
+    padding: 2rem;
+  }
+  .main-content .features .box-container .box2 {
+    order: -1;
+    text-align: center;
+  }
+  .main-content .features .box-container .box3 {
+    text-align: center;
+    padding-left: 0;
+    border-top: 1px solid black;
+  }
+  .main-content .features .box-container .box5 {
+    order: 6;
+  }
+  .main-content .features .box-container .box6 {
+    text-align: center;
+    border-top: 1px solid black;
+  }
+}
+@media (max-width: 700px) {
+  .main-content .features .box-container {
+    width: 100%;
+  }
 }
 .main-content .features .box-container div {
-  border: 1px solid black;
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media (max-width: 920px) {
+  .main-content .features .box-container div {
+    width: 100%;
+    padding: 2rem;
+  }
 }
 .main-content .features .box-container div img {
   height: 200px;
@@ -312,7 +408,7 @@ footer {
   height: auto;
   font-size: 1.5rem;
   max-width: 900px;
-  margin: 0px auto;
+  margin: 30px auto;
 }
 footer .links {
   display: flex;
@@ -341,15 +437,20 @@ footer .links .footernav ul a {
   color: black;
   padding: 1rem;
 }
+@media (max-width: 700px) {
+  footer .links .footernav ul {
+    padding-bottom: 20px;
+  }
+}
 footer .links .icons {
   font-size: 3rem;
 }
 @media (max-width: 700px) {
   footer .links .icons {
-    padding: 2rem;
+    padding: 1rem;
   }
 }
 footer .copyright {
   text-align: center;
-  padding-bottom: 3rem;
+  padding-top: 10rem;
 }

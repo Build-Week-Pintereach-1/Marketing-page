@@ -16,7 +16,8 @@
         align-items: center;
     }
     .our-story {
-        border: 1px solid black;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -26,12 +27,13 @@
             margin: 5rem;
         }
         .text-box {
-            border: 1px solid black;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
             width: 600px;
             margin-bottom: 5rem;
             padding: 2rem;
             @media @mobile {
-                width: 90%;
+                width: 400px;
             }
             p {
                 line-height: 30px;
@@ -43,37 +45,39 @@
         display: flex;
         justify-content: center;
         .team-container {
-            width:80%;
+            width:80rem;
             height: 100%;
-            border: 1px solid rgb(158, 34, 34);
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            @media @tablet {
+                width: 60rem;
+            }
 
             .title {
                 text-align: center;
-                margin: 2rem;
+                margin-top: 4rem;
             }
             .profiles {
-                border: 1px solid black;
+                
                 max-width: 100rem;
-                margin: 5rem;
+                margin: 1rem 5rem 5rem 5rem;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
                 align-content: space-between;
+                @media @mobile {
+                    width: 100%;
+                }
                 .box {
-                    border: 1px solid black;
+                    
                     width: 30%;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     @media @tablet {
                         width: 50%;
-                    }
-                    @media @mobile {
-                        width: 100%;
                     }
                     .img-container {
                         width: 70%;

@@ -12,7 +12,6 @@ footer {
         height: 50%;
         @media @mobile {
             flex-direction: column;
-    
             padding: 1rem;
         }
         .logo {
@@ -34,12 +33,15 @@ footer {
         .icons {
             font-size: 3rem;
             @media @mobile {
-                padding: 1rem;
+                padding: 3rem;
             }
         }
     }
     .copyright {
         text-align: center;
-        padding-top: 10rem;
+        padding-top: 4rem;
+        @media @tablet {
+            margin-top: 0rem;
+        }
     }
 }

@@ -173,19 +173,22 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 0 100px;
+  padding: 10px 100px;
   background: black;
   width: 100%;
   box-sizing: border-box;
 }
-@media (max-width: 650px) {
+@media (max-width: 700px) {
   header {
-    padding: 0 20px;
+    padding: 14px 15px;
   }
+}
+header img {
+  width: 5rem;
 }
 header .logo {
   color: white;
-  height: 50px;
+  height: auto;
   line-height: 50px;
   font-size: 24px;
   float: left;
@@ -194,13 +197,13 @@ header .logo {
 header nav {
   float: right;
 }
-@media (max-width: 650px) {
+@media (max-width: 700px) {
   header nav {
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 16rem;
     background: #333;
-    top: 50px;
+    top: 75px;
     left: -100%;
     transition: 0.5s;
   }
@@ -210,7 +213,7 @@ header nav ul {
   padding: 0;
   display: flex;
 }
-@media (max-width: 650px) {
+@media (max-width: 700px) {
   header nav ul {
     display: block;
     text-align: center;
@@ -220,7 +223,7 @@ header nav ul li {
   list-style: none;
 }
 header nav ul li a {
-  height: 50px;
+  height: 5rem;
   font-size: 15px;
   line-height: 50px;
   padding: 0 20px;
@@ -228,14 +231,14 @@ header nav ul li a {
   text-decoration: none;
   display: block;
 }
-@media (max-width: 650px) {
+@media (max-width: 700px) {
   header nav ul li a {
     border-bottom: 1px solid black;
   }
 }
 header nav ul li a:hover {
   color: orange;
-  background: grey;
+  border: 1px solid grey;
 }
 header nav.active {
   left: 0;
@@ -248,7 +251,7 @@ header .menu-toggle {
   display: none;
   cursor: pointer;
 }
-@media (max-width: 650px) {
+@media (max-width: 700px) {
   header .menu-toggle {
     display: block;
   }
@@ -266,7 +269,8 @@ header .menu-toggle {
   align-items: center;
 }
 .main-content .our-story {
-  border: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -276,14 +280,15 @@ header .menu-toggle {
   margin: 5rem;
 }
 .main-content .our-story .text-box {
-  border: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
   width: 600px;
   margin-bottom: 5rem;
   padding: 2rem;
 }
-@media (max-width: 650px) {
+@media (max-width: 700px) {
   .main-content .our-story .text-box {
-    width: 90%;
+    width: 400px;
   }
 }
 .main-content .our-story .text-box p {
@@ -295,29 +300,36 @@ header .menu-toggle {
   justify-content: center;
 }
 .main-content .team .team-container {
-  width: 80%;
+  width: 80rem;
   height: 100%;
-  border: 1px solid #9e2222;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 920px) {
+  .main-content .team .team-container {
+    width: 60rem;
+  }
+}
 .main-content .team .team-container .title {
   text-align: center;
-  margin: 2rem;
+  margin-top: 4rem;
 }
 .main-content .team .team-container .profiles {
-  border: 1px solid black;
   max-width: 100rem;
-  margin: 5rem;
+  margin: 1rem 5rem 5rem 5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: space-between;
 }
+@media (max-width: 700px) {
+  .main-content .team .team-container .profiles {
+    width: 100%;
+  }
+}
 .main-content .team .team-container .profiles .box {
-  border: 1px solid black;
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -326,11 +338,6 @@ header .menu-toggle {
 @media (max-width: 920px) {
   .main-content .team .team-container .profiles .box {
     width: 50%;
-  }
-}
-@media (max-width: 650px) {
-  .main-content .team .team-container .profiles .box {
-    width: 100%;
   }
 }
 .main-content .team .team-container .profiles .box .img-container {
@@ -358,7 +365,7 @@ footer .links {
   justify-content: space-around;
   height: 50%;
 }
-@media (max-width: 650px) {
+@media (max-width: 700px) {
   footer .links {
     flex-direction: column;
     padding: 1rem;
@@ -367,7 +374,7 @@ footer .links {
 footer .links .logo {
   font-size: 2rem;
 }
-@media (max-width: 650px) {
+@media (max-width: 700px) {
   footer .links .logo {
     padding-bottom: 10px;
   }
@@ -379,7 +386,7 @@ footer .links .footernav ul a {
   color: black;
   padding: 1rem;
 }
-@media (max-width: 650px) {
+@media (max-width: 700px) {
   footer .links .footernav ul {
     padding-bottom: 20px;
   }
@@ -387,12 +394,17 @@ footer .links .footernav ul a {
 footer .links .icons {
   font-size: 3rem;
 }
-@media (max-width: 650px) {
+@media (max-width: 700px) {
   footer .links .icons {
-    padding: 1rem;
+    padding: 3rem;
   }
 }
 footer .copyright {
   text-align: center;
-  padding-top: 20px;
+  padding-top: 4rem;
+}
+@media (max-width: 920px) {
+  footer .copyright {
+    margin-top: 0rem;
+  }
 }

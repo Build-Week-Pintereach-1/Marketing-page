@@ -2,7 +2,7 @@ footer {
     height: auto;
     font-size: 1.5rem;
     max-width: 900px;
-    margin: 30px auto;
+    margin: 0rem auto 4rem auto;
     
     
     .links {
@@ -16,8 +16,17 @@ footer {
         }
         .logo {
             font-size: 2rem;
+            cursor: pointer;
+            color: black;
             @media @mobile {
                 padding-bottom: 10px;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+                padding: 2px;
+                border: 2px solid #FF6347;
+                border-radius: 5px;
             }
         }
         .footernav ul {
@@ -28,10 +37,12 @@ footer {
             }
             @media @mobile {
                 padding-bottom: 20px;
+                margin-top: 3rem;
             }
         }
         .icons {
             font-size: 3rem;
+            cursor: pointer;
             @media @mobile {
                 padding: 3rem;
             }

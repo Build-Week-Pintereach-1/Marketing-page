@@ -134,7 +134,7 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: sans-serif;
 }
 h1,
 h2,
@@ -187,12 +187,17 @@ header img {
   width: 5rem;
 }
 header .logo {
-  color: white;
+  color: #F5FFFA;
   height: auto;
   line-height: 50px;
   font-size: 24px;
   float: left;
   font-weight: bold;
+  cursor: pointer;
+}
+header .logo a {
+  text-decoration: none;
+  color: #F5FFFA;
 }
 header nav {
   float: right;
@@ -201,7 +206,7 @@ header nav {
   header nav {
     position: absolute;
     width: 100%;
-    height: 16rem;
+    height: 15.2rem;
     background: #333;
     top: 75px;
     left: -100%;
@@ -238,7 +243,6 @@ header nav ul li a {
 }
 header nav ul li a:hover {
   color: orange;
-  border: 1px solid grey;
 }
 header nav.active {
   left: 0;
@@ -256,10 +260,14 @@ header .menu-toggle {
     display: block;
   }
 }
+.toggle-class {
+  display: none;
+}
 .main-content {
-  margin-top: 50px;
+  margin-top: 70px;
   border: 1px solid black;
   height: auto;
+  margin-bottom: 1rem;
 }
 .main-content .banner {
   height: 20vh;
@@ -267,6 +275,10 @@ header .menu-toggle {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #7070db;
+}
+.main-content .banner h1 {
+  color: #F5FFFA;
 }
 .main-content .our-story {
   border-top: 1px solid black;
@@ -278,10 +290,11 @@ header .menu-toggle {
 .main-content .our-story h2 {
   text-align: center;
   margin: 5rem;
+  color: #FF6347;
 }
 .main-content .our-story .text-box {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px dashed black;
+  border-bottom: 1px dashed black;
   width: 600px;
   margin-bottom: 5rem;
   padding: 2rem;
@@ -295,7 +308,6 @@ header .menu-toggle {
   line-height: 30px;
 }
 .main-content .team {
-  border: 1px solid black;
   display: flex;
   justify-content: center;
 }
@@ -315,6 +327,7 @@ header .menu-toggle {
 .main-content .team .team-container .title {
   text-align: center;
   margin-top: 4rem;
+  color: #FF6347;
 }
 .main-content .team .team-container .profiles {
   max-width: 100rem;
@@ -357,7 +370,7 @@ footer {
   height: auto;
   font-size: 1.5rem;
   max-width: 900px;
-  margin: 30px auto;
+  margin: 0rem auto 4rem auto;
 }
 footer .links {
   display: flex;
@@ -373,11 +386,20 @@ footer .links {
 }
 footer .links .logo {
   font-size: 2rem;
+  cursor: pointer;
+  color: black;
 }
 @media (max-width: 700px) {
   footer .links .logo {
     padding-bottom: 10px;
   }
+}
+footer .links .logo a {
+  text-decoration: none;
+  color: black;
+  padding: 2px;
+  border: 2px solid #FF6347;
+  border-radius: 5px;
 }
 footer .links .footernav ul {
   display: flex;
@@ -389,10 +411,12 @@ footer .links .footernav ul a {
 @media (max-width: 700px) {
   footer .links .footernav ul {
     padding-bottom: 20px;
+    margin-top: 3rem;
   }
 }
 footer .links .icons {
   font-size: 3rem;
+  cursor: pointer;
 }
 @media (max-width: 700px) {
   footer .links .icons {

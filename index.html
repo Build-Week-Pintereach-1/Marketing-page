@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         
-        <title>Pintereach</title>
+        <title>Home | Pintereach</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/index.css">
@@ -14,10 +14,10 @@
 
         <header>
             <img src="/img/logo/pintereach-icon.png" alt="">
-            <div class="logo">Pintereach</div>
-            <nav class="active">
+            <div class="logo" id="home">Pintereach</div>
+            <nav>
                 <ul>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
                     <li><a href="#">Login</a></li>
                     <li><a href="#"><span id="register">Register</span></a></li>
                 </ul>
@@ -32,7 +32,7 @@
                 <div class="text">
                     <div class="text-box">
                         <h1>Research Made Easy</h1>
-                        <p>A user friendly way to do research. Store all your articles in one place and get easy to them anytime, anywhere.</p>
+                        <p>Pintereach is a user friendly way to do research. Store all of your articles in one place and get easy access to them anytime, anywhere.</p>
                         <button>GET STARTED</button>
                     </div>
                 </div>
@@ -50,11 +50,11 @@
                     </div>
                     <div class="box2">
                         <h2>Quick Bookmarks</h2>
-                        <p>Easy way to bookmark</p>
+                        <p>An easy way to bookmark your most important articles</p>
                     </div>
                     <div class="box3">
                         <h2>Art Boards</h2>
-                        <p>A collection of saved articles for future reference</p>
+                        <p>Create a custom board specific to the subject your learning about</p>
                     </div>
                     <div class="box4">
                         <img src="/img/Artboards.svg" alt="">
@@ -64,7 +64,7 @@
                     </div>
                     <div class="box6">
                         <h2>Team Collaboration</h2>
-                        <p>Access boards and articles across teams and work together</p>
+                        <p>Share your boards across teams and work together</p>
                     </div>
                 </div>
             </section>
@@ -74,7 +74,7 @@
         <footer>
             <div class="links">
                 <div class="logo">
-                    <span>Pintereach</span>
+                    <span><a href="#home">Pintereach</a></span>
                 </div>
                 <div class="footernav">
                     <ul>
@@ -99,7 +99,7 @@
     <script
 src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script type="text/javascript">
-        $(document).ready(function(){
+        $(document).click(function(){
             $('.menu-toggle').click(function(){
                 $('nav').toggleClass('active')
             })

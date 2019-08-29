@@ -4,16 +4,25 @@
 @import "global";
 @import "nav";
 
+.toggle-class {
+    display: none;
+}
+
 .main-content {
-    margin-top: 50px;   
+    margin-top: 70px;   
     border: 1px solid black;
     height: auto;
+    margin-bottom: 1rem;
     .banner {
         height: 20vh;
         border: 1px solid black;
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: #7070db;
+        h1 {
+            color: #F5FFFA;
+        }
     }
     .our-story {
         border-top: 1px solid black;
@@ -25,10 +34,11 @@
         h2 {
             text-align: center;
             margin: 5rem;
+            color: #FF6347;
         }
         .text-box {
-            border-top: 1px solid black;
-            border-bottom: 1px solid black;
+            border-top: 1px dashed black;
+            border-bottom: 1px dashed black;
             width: 600px;
             margin-bottom: 5rem;
             padding: 2rem;
@@ -41,7 +51,6 @@
         }
     }
     .team  {
-        border: 1px solid black;
         display: flex;
         justify-content: center;
         .team-container {
@@ -58,6 +67,7 @@
             .title {
                 text-align: center;
                 margin-top: 4rem;
+                color: #FF6347;
             }
             .profiles {
                 

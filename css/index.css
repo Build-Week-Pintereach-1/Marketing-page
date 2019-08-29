@@ -134,7 +134,7 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: sans-serif;
 }
 h1,
 h2,
@@ -187,12 +187,16 @@ header img {
   width: 5rem;
 }
 header .logo {
-  color: white;
+  color: #F5FFFA;
   height: auto;
   line-height: 50px;
   font-size: 24px;
   float: left;
   font-weight: bold;
+  cursor: pointer;
+}
+header .logo a {
+  text-decoration: none;
 }
 header nav {
   float: right;
@@ -201,7 +205,7 @@ header nav {
   header nav {
     position: absolute;
     width: 100%;
-    height: 16rem;
+    height: 15.2rem;
     background: #333;
     top: 75px;
     left: -100%;
@@ -238,7 +242,6 @@ header nav ul li a {
 }
 header nav ul li a:hover {
   color: orange;
-  border: 1px solid grey;
 }
 header nav.active {
   left: 0;
@@ -355,6 +358,9 @@ header .menu-toggle {
   flex-wrap: wrap;
   margin: 5rem 0rem 5rem 0rem;
 }
+.main-content .features .box-container h2 {
+  color: #FF6347;
+}
 .main-content .features .box-container .box3 {
   padding-left: 20%;
 }
@@ -408,7 +414,7 @@ footer {
   height: auto;
   font-size: 1.5rem;
   max-width: 900px;
-  margin: 30px auto;
+  margin: 0rem auto 4rem auto;
 }
 footer .links {
   display: flex;
@@ -424,11 +430,20 @@ footer .links {
 }
 footer .links .logo {
   font-size: 2rem;
+  cursor: pointer;
+  color: black;
 }
 @media (max-width: 700px) {
   footer .links .logo {
     padding-bottom: 10px;
   }
+}
+footer .links .logo a {
+  text-decoration: none;
+  color: black;
+  padding: 2px;
+  border: 2px solid #FF6347;
+  border-radius: 5px;
 }
 footer .links .footernav ul {
   display: flex;
@@ -440,10 +455,12 @@ footer .links .footernav ul a {
 @media (max-width: 700px) {
   footer .links .footernav ul {
     padding-bottom: 20px;
+    margin-top: 3rem;
   }
 }
 footer .links .icons {
   font-size: 3rem;
+  cursor: pointer;
 }
 @media (max-width: 700px) {
   footer .links .icons {
